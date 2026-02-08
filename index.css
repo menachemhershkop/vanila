@@ -1,0 +1,14 @@
+body{
+    background: #30abaa ;
+}
+
+#create{
+    display: none;
+}
+#extent{
+    display: none;
+    background: white;
+    position: absolute;
+    width: 30em;
+    margin-bottom: 10%;
+}
