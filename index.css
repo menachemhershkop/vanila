@@ -2,13 +2,17 @@ body{
     background: #30abaa ;
     direction: rtl;
 }
-
+button{
+    background: #ef33914a;
+}
 #create{
     display: none;
 }
 nav{
     display: flex;
     justify-content: space-between;
+    opacity: 40%;
+    background: #6d7676;
 }
 .extent{
     display: flex;
@@ -26,8 +30,8 @@ nav{
 #deskNews{
     display: grid;
     /* grid-template-rows: 50% 50%; */
-    grid-template-columns: 50% 50%;
-    gap: 20p;
+    grid-template-columns: 30% 30%;
+    gap: 10em;
     justify-self: center;
     align-self: center;
     height: 100%;

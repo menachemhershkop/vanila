@@ -10,11 +10,13 @@
 <body>
     <nav>
         <h1> News</h1>
+        <div>
         <button onclick="homePage()">Home</button>
         <button onclick="upload()">Create Story</button>
+        </div>
     </nav>
     <section id="deskNews">
-    <header id="card" class="card" onclick="extentNwes()">
+    <!-- <header id="card" class="card" onclick="extentNwes()">
         <div id="author">a</div>
         <div id="title">sdafdsaf</div>
         <div id="urlToImage"><img src="teror.png" alt="pic" height="100"></div>
@@ -33,26 +35,30 @@
         <div id="author">a</div>
         <div id="title">sdafdsaf</div>
         <div id="urlToImage"><img src="teror.png" alt="pic" height="100"></div>
-    </header>
+    </header> -->
     <header id="extent" >
-        <div id="description">erge</div>
+        <!-- <div id="description">erge</div>
         <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim maiores itaque deserunt, excepturi perspiciatis unde ipsa voluptatibus, quae fugit ad esse, iusto alias voluptate ducimus temporibus id aliquid reiciendis.</div>
         <div id="urlToImage"><img src="teror.png" alt="pic" height="100"></div>
-        <button onclick="close()">Close</button>
+        <button onclick="close()">Close</button> -->
     </header>
 </section>
-    <section id="create">
-        <form action="">
-            <label for="kotert"><br>
-                <input type="text" id="kotert"><br>
+    <section >
+        <form id="create" action="">
+            <label for="kotert">tilte<br>
+                <input type="text" name="title" id="kotert"><br>
             </label>
             <label for="pic"><br>
-                <input type="file" id="pic"><br>
+                <input type="file" id="pic" name="image" onchange="encodeImageFileAsURL(this)"><br>
+                <input type="hidden" name="img64" id="pic64">
             </label>
-            <label for="content"><br>
+            <label for="description">description <br>
+                <input type="text" name="description"><br>
+            </label>
+            <label for="content">content<br>
                 <textarea name="content" id="content"></textarea><br>
             </label>
-            <button type="submit">Send</button>
+            <button id="submit" type="submit">Send</button>
         </form>
     </section>
 </body>
